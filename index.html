@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大数据审计平台</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ECharts">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+	<div>
+		<header>大数据平台审计系统</header>
+		<div class="container">
+			<div style="width: 450px;height: 785px;margin-bottom: 20px;">
+				<div id="running" style="width: 100%;height:300px;"></div>
+				<div id="handle" style="width: 100%;height:215px;margin: 20px 0px;"></div>
+				<div id="LOF" style="width: 100%;height:235px;"></div>
+			</div>
+			<div style="width: 570px;display: flex;flex-direction: column;justify-content: space-between;height: 785px;margin-bottom: 20px">
+				<div id="map" style="width: 100%;height:530px;margin: 0 auto;" ></div>
+				<div class="text" id="text">
+					<ul class="data-header">
+						<li style="width: 90px;">时间</li>
+						<li style="width: 60px;">账号</li>
+						<li style="width: 80px;">源IP</li>
+						<li style="width: 86px;">目的IP</li>
+						<li>警告内容</li>
+					</ul>
+					<ul class="sliderbox">
+						<li>
+							<div style="width: 90px;line-height: 18px;">
+								<span>2019-04-17</span><br>
+								<span>11:13:06</span>
+							</div>
+							<div style="width: 60px;">
+								neimeng
+							</div>
+							<div style="width: 80px;">
+								10.166.129.23
+							</div>
+							<div style="width: 88px;"> 
+								10.166.129.23
+							</div>
+							<div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+								2004:敏感指令执行告警，SZ、NC、SFTP
+							</div>
+						</li>
+						<li>
+							<div style="width: 90px;line-height: 18px;">
+								<span>2019-04-17</span><br>
+								<span>11:13:06</span>
+							</div>
+							<div style="width: 60px;">
+								undefined
+							</div>
+							<div style="width: 80px;">
+								10.166.129.23
+							</div>
+							<div style="width: 88px;">
+								10.166.129.23
+							</div>
+							<div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+								2004:敏感指令执行告警，SZ、NC、SFTP
+							</div>
+						</li>
+						<li>
+							<div style="width: 90px;line-height: 18px;">
+								<span>2019-04-17</span><br>
+								<span>11:13:06</span>
+							</div>
+							<div style="width: 60px;">
+								undefined
+							</div>
+							<div style="width: 80px;">
+								10.166.129.23
+							</div>
+							<div style="width: 88px;">
+								10.166.129.23
+							</div>
+							<div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+								2004:敏感指令执行告警，SZ、NC、SFTP
+							</div>
+						</li>
+						<li>
+							<div style="width: 90px;line-height: 18px;">
+								<span>2019-04-17</span><br>
+								<span>11:13:06</span>
+							</div>
+							<div style="width: 60px;">
+								undefined
+							</div>
+							<div style="width: 80px;">
+								10.166.129.23
+							</div>
+							<div style="width: 88px;">
+								10.166.129.23
+							</div>
+							<div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+								2004:敏感指令执行告警，SZ、NC、SFTP
+							</div>
+						</li>
+						<li>
+							<div style="width: 90px;line-height: 18px;">
+								<span>2019-04-17</span><br>
+								<span>11:13:06</span>
+							</div>
+							<div style="width: 60px;">
+								undefined
+							</div>
+							<div style="width: 80px;">
+								10.166.129.23
+							</div>
+							<div style="width: 88px;">
+								10.166.129.23
+							</div>
+							<div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+								2004:敏感指令执行告警，SZ、NC、SFTP
+							</div>
+						</li>
+						<li>
+							<div style="width: 90px;line-height: 18px;">
+								<span>2019-04-17</span><br>
+								<span>11:13:06</span>
+							</div>
+							<div style="width: 60px;">
+								undefined
+							</div>
+							<div style="width: 80px;">
+								10.166.129.23
+							</div>
+							<div style="width: 88px;">
+								10.166.129.23
+							</div>
+							<div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+								2004:敏感指令执行告警，SZ、NC、SFTP
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="width: 400px;height: 785px;margin-bottom: 20px;display: flex;flex-direction: column;justify-content: space-between;">
+				<div style="width: 100%">
+					<h4 style="color: #b1c3f8;font-size: 18px; margin-bottom: 35px;font-weight: bold">今日数据</h4>
+					<div style="width: 400px;display: flex;flex-wrap: wrap;align-items: center;justify-content: flex-start;">
+						<div class="Today-data">
+							<div class="container1">
+								<div class="dot"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							    <img src="./img/1.png" alt="" style="position: absolute;z-index: 2;width: 25px;top: 10px;left: 10px;">
+							</div>
+							<div class="l-part">
+								<p class="data-number">199.99</p>
+								<p class="data-title">日志数(万条)</p>
+							</div>
+						</div>
+						<div class="Today-data">
+							<div class="container1">
+								<div class="dot"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							    <img src="./img/2.png" alt="" style="position: absolute;z-index: 2;width: 25px;top: 10px;left: 10px;">
+							</div>
+							<div class="l-part">
+								<p class="data-number">3103</p>
+								<p class="data-title">监控主机数</p>
+							</div>
+						</div>
+						<div class="Today-data">
+							<div class="container1">
+								<div class="dot"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							    <img src="./img/3.png" alt="" style="position: absolute;z-index: 2;width: 25px;top: 10px;left: 10px;">
+							</div>
+							<div class="l-part">
+								<p class="data-number">77646</p>
+								<p class="data-title">审计操作数</p>
+							</div>
+						</div>
+						<div class="Today-data">
+							<div class="container1">
+								<div class="dot"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							    <img src="./img/4.png" alt="" style="position: absolute;z-index: 2;width: 25px;top: 10px;left: 10px;">
+							</div>
+							<div class="l-part">
+								<p class="data-number">9</p>
+								<p class="data-title">登录失败</p>
+							</div>
+						</div>
+						<div class="Today-data">
+							<div class="container1">
+								<div class="dot"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							    <img src="./img/5.png" alt="" style="position: absolute;z-index: 2;width: 25px;top: 10px;left: 10px;">
+							</div>
+							<div class="l-part">
+								<p class="data-number">22</p>
+								<p class="data-title">告警数</p>
+							</div>
+						</div>
+						<div class="Today-data">
+							<div class="container1">
+								<div class="dot"></div>
+								<div class="pulse"></div>
+								<div class="pulse1"></div>
+							    <img src="./img/6.png" alt="" style="position: absolute;z-index: 2;width: 25px;top: 10px;left: 10px;">
+							</div>
+							<div class="l-part">
+								<p class="data-number">23</p>
+								<p class="data-title">大文件下载</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<h4 style="color:#b1c3f8;font-size: 18px;margin-bottom: 35px;font-weight: bold">日志状态</h4>
+					<div style="display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: space-between;width: 400px;margin-bottom: 15px;">
+						<span style="color:#b1c3f8 ">操作日志</span>
+						<div id="status" class="status"></div>
+						<span style="color:#b1c3f8 ">3412 条</span>
+					</div>
+					<div style="display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: space-between;width: 400px;margin-bottom: 15px;">
+						<span style="color:#b1c3f8 ">登录日志</span>
+						<div id="status1" class="status"></div>
+						<span style="color:#b1c3f8 ">30 条</span>
+					</div>
+					<div style="display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: space-between;width: 400px;margin-bottom: 15px;">
+						<span style="color:#b1c3f8 ">FTP日志</span>
+						<div id="status2" class="status"></div>
+						<span style="color:#b1c3f8 ">1904 条</span>
+					</div>
+					<div style="display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: space-between;width: 400px;margin-bottom: 15px;">
+						<span style="color:#b1c3f8 ">主机日志</span>
+						<div id="status3" class="status"></div>
+						<span style="color:#b1c3f8 ">3117 条</span>
+					</div>
+					<div style="display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: space-between;width: 400px;margin-bottom: 15px;">
+						<span style="color:#b1c3f8 ">安全日志</span>
+						<div id="status4" class="status" style="width: 63%;"></div>
+						<span style="color:#b1c3f8 ">341224 条</span>
+					</div>
+					<div style="display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: space-between;width: 400px;margin-bottom: 15px;">
+						<span style="color:#b1c3f8 ">VPN日志</span>
+						<div id="status5" class="status"></div>
+						<span style="color:#b1c3f8 ">23412 条</span>
+					</div>
+					<div style="display: flex;flex-wrap: nowrap;align-items: flex-end;justify-content: space-between;width: 400px;">
+						<span style="color:#b1c3f8 ">防火墙</span>
+						<div id="status6" class="status"></div>
+						<span style="color:#b1c3f8 ">0条</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.1.min_044d0927.js"></script>
+	<script src="./js/echarts-all-3.js"></script>
+	<script src="./js/running.js"></script>
+	<script src="./js/handle.js"></script>
+	<script src="./js/china.js"></script>
+	<script src="./js/map.js"></script>
+	<script src="./js/lof.js"></script>
+	<script src="./js/status/status.js"></script>
+	<script src="./js/status/status1.js"></script>
+	<script src="./js/status/status2.js"></script>
+	<script src="./js/status/status3.js"></script>
+	<script src="./js/status/status4.js"></script>
+	<script src="./js/status/status5.js"></script>
+	<script src="./js/status/status6.js"></script>
+	<script src="./js/power-slider.min.js"></script>
+	
+	<script>
+		$("#text").powerSlider({handle:"slideTo",delayTime:3000,sliderNum:4});
+	</script>
+</body>
+</html>

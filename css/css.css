@@ -1,0 +1,210 @@
+
+body{
+	background: url("../img/bg.jpg") no-repeat center center;
+	background-size:cover;
+   background-attachment:fixed;
+   min-width: 1360px;
+   margin-bottom: 30px;
+
+}
+header{
+	background: url('../img/title.png') no-repeat center top;
+	width: 1332px;
+	height:85px;
+	line-height: 85px;
+	width: 100%;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	
+}
+.container:before{
+	// content: '';
+	// width: 400px;
+}
+.sliderbox{position:relative;}
+	.text{height:205px; width:570px; overflow: hidden; position: relative; margin:0px auto;}
+	.data-header ,.sliderbox{
+		width: 570px;
+	}
+	.data-header {
+		height: 32px;
+		padding: 0 0 0 5px;
+		border-bottom: 2px solid #1c3a5a;
+	}
+	.data-header li{
+		float: left;
+		color: #fff;
+		font-size: 18px;
+		
+	}
+	.sliderbox li{
+		display: flex;
+		width: 100%;
+		align-items: center;
+		color: #fff;
+		padding: 0 0 0 5px;
+		font-size: 12px;
+		height: 42px;
+		box-sizing: border-box;
+		border-bottom: 2px solid #1c3a5a;
+	}
+	.Today-data {
+		display: flex;
+		align-items: center;
+		margin-right: 100px;
+    	margin-bottom: 65px;
+    	width: 140px;
+	}
+	.Today-data:nth-child(2n){
+		margin-right: 0;
+	}
+	.Today-data .data-number {
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.Today-data .data-title{
+		color: #b1c3f8;
+		font-size: 14px;
+	}
+	.l-part {
+		line-height: 24px
+	}
+
+	@keyframes warn {
+		0% {
+		transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		opacity: 0.0;
+		}
+
+		25% {
+		transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		opacity: 0.1;
+		}
+
+		50% {
+		transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		opacity: 0.3;
+		}
+
+		75% {
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		opacity: 0.5;
+		}
+
+		100% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		opacity: 0.0;
+		}
+		}
+
+		@keyframes warn1 {
+		0% {
+		transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		opacity: 0.0;
+		}
+
+		25% {
+		transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		opacity: 0.1;
+		}
+
+		50% {
+		transform: scale(0.3);
+		-webkit-transform: scale(0.3);
+		opacity: 0.3;
+		}
+
+		75% {
+		transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		opacity: 0.5;
+		}
+
+		100% {
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		opacity: 0.0;
+		}
+		}
+
+		.container1 {
+		position: relative;
+		width: 45px;
+		height: 45px;
+		margin-right: 15px;
+		}
+		/* 保持大小不变的小圆圈 */
+		.dot {
+		position: absolute;
+		width: 45px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		/*border: 1px solid rgba(31, 45, 85, 0.7);*/
+		border-radius: 50%; 
+		z-index: 1;
+		background-color: rgba(31, 45, 85, 0.7);
+		}
+		/* 产生动画（向外扩散变大）的圆圈 第一个圆 */
+		.pulse {
+		position: absolute;
+		width: 65px;
+		height: 65px;
+		left: -15px;
+		top: -15px;
+		border: 5px solid rgba(31, 45, 85, 0.7);
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		z-index: 1;
+		opacity: 0;
+		-webkit-animation: warn 1.5s ease-out;
+		-moz-animation: warn 1.5s ease-out;
+		animation: warn 1.5s ease-out;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		background-color: rgba(31, 45, 85, 0.7)
+		}
+		/* 产生动画（向外扩散变大）的圆圈 第二个圆 */
+		.pulse1 {
+		position: absolute;
+		width: 65px;
+		height: 65px;
+		left: -15px;
+		top: -15px;
+		border: 5px solid rgba(5, 35, 120, 0.8);
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		z-index: 1;
+		opacity: 0;
+		-webkit-animation: warn1 1.5s ease-out;
+		-moz-animation: warn1 1.5s ease-out;
+		animation: warn1 1.5s ease-out;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		background-color: rgba(31, 45, 85, 0.7);
+	}
+	.status {
+		width: 66%; height: 30px;
+	}
