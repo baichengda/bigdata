@@ -78,6 +78,14 @@ header{
 	.l-part {
 		line-height: 24px
 	}
+	.map {
+		width: 570px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 785px;
+		margin-bottom: 20px
+	}
 
 	@keyframes warn {
 		0% {
@@ -207,4 +215,28 @@ header{
 	}
 	.status {
 		width: 50%; height: 30px;
+	}
+	
+	@media (max-width: 1200px) {
+		body{
+			min-width: 0px;
+		}
+		.container {
+			
+			flex-wrap: wrap;
+		}
+	}
+	@media (max-width: 768px) {
+		.text{
+			width: 360px;
+		    overflow: auto;
+		    margin: 0 auto;
+		    padding: 0 15px;
+		}
+		header{
+			font-size: 14px;
+		}
+		.map{
+			width: 400px;
+		}
 	}
