@@ -3,7 +3,7 @@ body{
 	background: url("../img/bg.jpg") no-repeat center center;
 	background-size:cover;
    background-attachment:fixed;
-   min-width: 1360px;
+   min-width: 1366px;
    margin-bottom: 30px;
 
 }
@@ -59,7 +59,7 @@ header{
 	.Today-data {
 		display: flex;
 		align-items: center;
-		margin-right: 100px;
+		margin-right: 60px;
     	margin-bottom: 65px;
     	width: 140px;
 	}
@@ -206,5 +206,5 @@ header{
 		background-color: rgba(31, 45, 85, 0.7);
 	}
 	.status {
-		width: 66%; height: 30px;
+		width: 50%; height: 30px;
 	}

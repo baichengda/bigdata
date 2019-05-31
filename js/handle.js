@@ -16,8 +16,10 @@
     legend: {
         data:['普通','一般','中危','高危'],
         x: 'center',
+        y:25,
         textStyle : {
             color: '#fff',
+            fontSize: 12,
         },
     },
     grid: {
